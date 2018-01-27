@@ -1,11 +1,14 @@
 .menu {
   position: relative;
+  padding-left: 33px;
+  margin-left: 55px;
+  margin-right: 80px;
   
   &::before {
     content: "";
     position: absolute;
-    top: -10px;
-    left: -30px;
+    top: -12px;
+    left: 0;
     width: 1px;
     height: 48px;
     background-color: rgb(247, 247, 247);
@@ -14,16 +17,23 @@
 
 .menu__btn {
   display: none;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icon-menu-ham.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 19px;
 }
 
 .menu__list {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  z-index: 10;
 }
 
 .menu__item {
-  margin-right: 15px;
+  margin-right: 17px;
 }
 
 .menu__link {
