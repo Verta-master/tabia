@@ -475,6 +475,9 @@ button {
   margin-bottom: 50px;
   border-bottom: 2px solid rgba(0, 3, 7, 0.2);
 }
+.title--bg {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
 .title__link {
   width: 22px;
   height: 22px;
@@ -631,6 +634,27 @@ button {
 .btn:active {
   opacity: 0.8;
 }
+.btn-white {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.102);
+}
+.btn-white:hover,
+.btn-white:active {
+  opacity: 0.8;
+}
 .promo {
   width: 100%;
   height: 480px;
@@ -722,4 +746,235 @@ button {
 }
 .service__text {
   padding-left: 20px;
+}
+.callback {
+  width: 100%;
+  height: 433px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../img/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.callback h2 {
+  color: #fff;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.callback p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  max-width: 560px;
+}
+.callback__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.callback__btn {
+  width: 200px;
+  height: 40px;
+}
+.callback__btn-white {
+  width: 196px;
+  height: 36px;
+  margin-left: 30px;
+}
+.benefits {
+  padding-top: 70px;
+  padding-bottom: 130px;
+}
+.benefits h2 {
+  text-align: center;
+  color: #3c434c;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.benefits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+.benefits__item {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.benefits__item p {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  font-weight: 700;
+  color: #3c434d;
+}
+.practice {
+  padding-top: 85px;
+  padding-bottom: 60px;
+  width: 100%;
+  background-image: url(../img/bg-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.practice h2 {
+  color: #fff;
+  font-size: 25px;
+  line-height: 36px;
+}
+.practice__slider {
+  padding-bottom: 40px;
+}
+.practice__slide {
+  width: 370px;
+  height: 220px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 35px 30px 20px 30px;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.practice__slide h3 {
+  color: #3c434d;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 0;
+}
+.practice__wrap {
+  width: 100%;
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.btn-more {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid #dbe4eb;
+  position: relative;
+}
+.btn-more:hover,
+.btn-more:active {
+  border: 2px solid rgba(0, 3, 7, 0.2);
+}
+.btn-more::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #80909c;
+  font-size: 20px;
+  line-height: 1;
+}
+.practice__slider > .swiper-pagination-bullets {
+  bottom: 0;
+}
+.practice__slider > .swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #dbe4eb;
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 1;
+}
+.practice__slider > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 6px;
+}
+.practice__slider > .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: #a2c527;
+  border-color: #a2c527;
+}
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.social__item {
+  margin-right: 20px;
+}
+.social__item a {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: #e9e9e9;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.social__item a:hover,
+.social__item a:active {
+  background-color: #629fd1;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
