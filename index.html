@@ -8,14 +8,14 @@
 </head>
 <body>
   <header class="header">
-    <div class="wrapper">
+    <div class="header__wrap wrapper">
       <div class="logo">
         <img src="img/logo.png" alt="Logo" width="90" height="36">
       </div>
       <nav class="menu">
         <button type="button" class="menu__btn"><span class="visually-hidden">Меню</span></button>
-        <ul class="manu__list">
-          <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#" class="menu__link menu__link--active">О компании</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Наша деятельность</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
@@ -26,20 +26,23 @@
         <input type="text" name="search" class="search__input" placeholder="Поиск...">
         <button type="submit" class="search__btn"><span class="visually-hidden">Искать</span></button>
       </form>
-      <a href="#" class="btn">Перезвоните мне</a>
+      <a href="#" class="btn call-btn">Перезвоните мне</a>
     </div>
   </header>
   
   <main>
     <section class="promo">
       <div class="wrapper">
-        <h1>Юридическая фирма ТАБИЯ была организована профессионалами своего дела и объединяет специалистов  в разных сферах юриспруденции с опытом работы не менее 10 лет</h1>
-        <a href="#" class="btn">Задать вопрос</a>
+        <h1>Юридическая фирма ТАБИЯ была организована профессионалами своего дела<br>и объединяет специалистов в разных сферах юриспруденции<br>с опытом работы не менее 10 лет</h1>
+        <a href="#" class="btn promo__btn">Задать вопрос</a>
       </div>
     </section>
     
     <section class="service wrapper">
-      <h2>Наши услуги</h2>
+      <div class="title">
+        <h2>Наши услуги</h2>
+        <a href="#" class="title__link"><span class="visually-hidden">Подробнее</span></a>
+      </div>
       <img src="img/img-1.jpg" alt="Наши услуги" class="service__img" width="342" height="429">
       <ul class="service__list">
         <li class="service__item">
@@ -281,7 +284,7 @@
       <input type="text" name="search" class="search__input" placeholder="Поиск...">
       <button type="submit" class="search__btn"><span class="visually-hidden">Искать</span></button>
     </form>
-    <a href="#" class="btn">Перезвоните мне</a>
+    <a href="#" class="btn call-btn">Перезвоните мне</a>
   </footer>
 </body>
 </html>
