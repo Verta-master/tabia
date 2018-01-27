@@ -461,6 +461,10 @@ button {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0);
 }
+h1,
+h2 {
+  line-height: 1.2;
+}
 .wrapper {
   width: 1230px;
   padding-left: 25px;
@@ -722,16 +726,17 @@ button {
   font-size: 18px;
 }
 .service {
-  padding-top: 55px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 .service h2 {
   color: #3c434c;
   font-size: 25px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 .service .title {
-  margin-bottom: 70px;
+  margin-bottom: 65px;
 }
 .service__img {
   float: left;
@@ -850,7 +855,7 @@ button {
   margin-left: 30px;
 }
 .benefits {
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 85px;
 }
 .benefits h2 {
@@ -858,7 +863,7 @@ button {
   color: #3c434c;
   font-weight: 700;
   font-size: 30px;
-  margin-bottom: 58px;
+  margin-bottom: 53px;
 }
 .benefits__list {
   display: -webkit-box;
@@ -1031,7 +1036,7 @@ button {
 }
 .review {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 20px;
   min-height: 367px;
   background-color: #f8f8f8;
@@ -1113,7 +1118,7 @@ button {
   font-size: 30px;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .order__block p {
   font-size: 15px;
@@ -1220,7 +1225,8 @@ button {
   font-weight: 600;
   color: #fff;
   text-align: center;
-  margin-bottom: 40px;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 .about p {
   max-width: 800px;
@@ -1229,9 +1235,10 @@ button {
   color: #fff;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 }
 .feedback {
-  padding-top: 50px;
+  padding-top: 45px;
   padding-bottom: 80px;
   background-color: #f8f8f8;
 }
@@ -1245,7 +1252,7 @@ button {
   max-width: 770px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 18px;
+  padding-top: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
