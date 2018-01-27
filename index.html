@@ -287,26 +287,28 @@
     </section>
     
     <section class="contacts">
-      <div class="contacts__map"></div>
+      <div class="contacts__map" id="map"></div>
       <div class="contacts__address">
         <p>620075, г.Екатеринбург, Адрес с улицей, домом, строением и офисом</p>
-        <a href="Tel:+73431110000" class="contacts__phone">+7 343 111 00 00</a>
-        <a href="Tel:+73432220000" class="contacts__phone">+7 343 222 00 00</a>
+        <a href="Tel:+73431110000" class="contacts__phone">+7 343 111 00 00 /</a>
+        <a href="Tel:+73432220000" class="contacts__phone">+7 343 222 00 00 /</a>
         <a href="Tel:+73433330000" class="contacts__phone">+7 343 333 00 00</a>
         <a href="milto:advokat@tabia.ru" class="contacts__mail">advokat@tabia.ru</a>
       </div>
     </section>
     
     <section class="feedback">
-      <h2>Напишите нам</h2>
-      <form action="#" method="post" class="feedback__form">
-        <input type="text" name="name" class="feedback__input" placeholder="Имя">
-        <input type="email" name="email" class="feedback__input" placeholder="E-mail">
-        <input type="tel" name="phone" class="feedback__input" placeholder="Телефон">
-        <input type="text" name="site" class="feedback__input" placeholder="Адрес сайта">
-        <textarea name="text" class="feedback__text" placeholder="Текст сообщения"></textarea>
-        <button type="submit" class="feedback__btn">Отправить</button>
-      </form>
+      <div class="wrapper">
+        <h2>Напишите нам</h2>
+        <form action="#" method="post" class="feedback__form">
+          <input type="text" name="name" class="feedback__input" placeholder="Имя">
+          <input type="email" name="email" class="feedback__input" placeholder="E-mail">
+          <input type="tel" name="phone" class="feedback__input" placeholder="Телефон">
+          <input type="text" name="site" class="feedback__input" placeholder="Адрес сайта">
+          <textarea name="text" class="feedback__text" placeholder="Текст сообщения"></textarea>
+          <button type="submit" class="btn feedback__btn">Отправить</button>
+        </form>
+      </div>
     </section>
   </main>
   
@@ -317,7 +319,7 @@
     <nav class="menu">
       <button type="button" class="menu__btn"><span class="visually-hidden">Меню</span></button>
       <ul class="menu__list">
-        <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+        <li class="menu__item"><a href="#" class="menu__link menu__link--active">О компании</a></li>
         <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
         <li class="menu__item"><a href="#" class="menu__link">Наша деятельность</a></li>
         <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
@@ -331,7 +333,8 @@
     <a href="#" class="btn call-btn">Перезвоните мне</a>
   </footer>
   
-  <script src="js/jquery-3.2.1.min.js"></script>
+<!--  <script src="js/jquery-3.2.1.min.js"></script>-->
+<!-- Sliders -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
   <script>
     var mySwiper = new Swiper ('.practice__slider', {
@@ -349,6 +352,26 @@
         prevEl: '.review__prev',
       },
     });
+  </script>
+  
+<!-- Map -->
+  <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU"></script>
+  <script>
+    var myMap;
+    ymaps.ready(init); // API loading
+    function init () {
+      myMap = new ymaps.Map("map", {
+        center: [56.836761, 60.598969], // map center
+        zoom: 15 // Zoom
+      });
+      //custom marker
+      var myPlacemark = new ymaps.Placemark([56.836761, 60.598969] , {},
+        { iconLayout: "default#image",
+          iconImageHref: "../img/icon-pin.png",
+          iconImageSize: [60, 60],
+          iconImageOffset: [-20, -47] });
+      myMap.geoObjects.add(myPlacemark);
+    }
   </script>
 </body>
 </html>
