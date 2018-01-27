@@ -1,0 +1,50 @@
+.contacts {
+  position: relative;
+}
+
+.contacts__map {
+  width: 100%;
+  height: 450px;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contacts__address {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 570px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  
+  a,
+  p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+.contacts__phone {
+  display: inline-block;
+  position: relative;
+  color: #80909c;
+}
+
+.contacts__mail {
+  display: block;
+  color: #629fd1;
+  text-decoration: underline;
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
