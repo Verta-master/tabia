@@ -1032,6 +1032,7 @@ button {
 .review {
   width: 100%;
   padding-top: 60px;
+  padding-bottom: 20px;
   min-height: 367px;
   background-color: #f8f8f8;
 }
@@ -1323,6 +1324,17 @@ button {
   .wrapper {
     width: 100%;
   }
+  .header__wrap,
+  .footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+  }
   .menu::before {
     display: none;
   }
@@ -1338,6 +1350,12 @@ button {
     background-color: #fff;
     border-radius: 4px;
     width: 160px;
+  }
+  .call-btn {
+    margin-left: 0;
+  }
+  .search {
+    margin-left: 0;
   }
   .footer .menu__list {
     bottom: 40px;
@@ -1371,9 +1389,89 @@ button {
 }
 @media (max-width: 1022px) {
   .service__img {
-    display: block;
+    display: none;
+  }
+  .service__list {
+    width: 100%;
+    margin-top: 0;
+  }
+  .order__block {
+    width: 100%;
+    left: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .order__block p {
+    max-width: 500px;
+    text-align: center;
+  }
+  .order__btn {
     margin-left: auto;
     margin-right: auto;
+  }
+  .feedback__input {
+    width: 45%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+@media (max-width: 700px) {
+  .call,
+  .call-btn,
+  .search {
+    display: none;
+  }
+  .menu__list {
+    right: -25px;
+    left: auto;
+  }
+  .promo h1 {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .benefits__item,
+  .service__item {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .practice__slide {
+    width: 100%;
+  }
+  .review__slide {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .review__prev {
+    left: 0;
+  }
+  .review__next {
+    right: 0;
+  }
+  .review__slide span {
+    font-size: 18px;
+  }
+  .order__input {
+    width: 100%;
+  }
+  .about h2 {
+    font-size: 30px;
+    line-height: 1.2;
     margin-bottom: 20px;
+  }
+  .contacts__address {
+    width: 100%;
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .feedback__input:nth-child(2n+1) {
+    margin-right: 0;
+    width: 100%;
   }
 }
