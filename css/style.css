@@ -1474,4 +1474,8 @@ button {
     margin-right: 0;
     width: 100%;
   }
+  .order__block p {
+    width: 100%;
+    max-width: 100%;
+  }
 }
