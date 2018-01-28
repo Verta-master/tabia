@@ -1692,6 +1692,128 @@ h2 {
 .info__link:active {
   text-decoration: none;
 }
+.breadcrumbs {
+  margin-top: 100px;
+}
+.breadcrumbs__link {
+  color: #629fd1;
+  margin-right: 10px;
+  position: relative;
+}
+.breadcrumbs__link:hover,
+.breadcrumbs__link:active {
+  text-decoration: underline;
+}
+.breadcrumbs__link::after {
+  content: ">";
+  position: absolute;
+  top: -3px;
+  right: -10px;
+  color: #000;
+}
+.breadcrumbs__link:last-child {
+  color: #000;
+}
+.breadcrumbs__link:last-child:hover,
+.breadcrumbs__link:last-child:active {
+  text-decoration: none;
+}
+.breadcrumbs__link:last-child::after {
+  display: none;
+}
+.article h1 {
+  color: #000;
+  font-size: 25px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.article__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.article__details {
+  width: 774px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sidebar {
+  width: 370px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sidebar__list {
+  padding: 25px;
+  padding-bottom: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sidebar__item {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.sidebar__item::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 6px;
+  height: 10px;
+  background-image: url(../img/icon-arrow-blue.svg);
+  background-repeat: no-repeat;
+}
+.sidebar__link {
+  color: #000;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.sidebar__link:hover,
+.sidebar__link:active {
+  text-decoration: underline;
+}
+.sidebar__subitem {
+  margin-top: 25px;
+  padding-left: 25px;
+  position: relative;
+}
+.sidebar__subitem::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #c9cfd4;
+}
+.sidebar__sublink {
+  color: #80909c;
+}
+.sidebar__sublink:hover,
+.sidebar__sublink:active,
+.sidebar__sublink--active {
+  color: #629fd1;
+}
+.sidebar__btn {
+  position: absolute;
+  bottom: 25px;
+  left: 45px;
+  color: #80909c;
+  text-decoration: underline;
+}
+.sidebar__btn:hover,
+.sidebar__btn:active {
+  text-decoration: none;
+}
 @media (max-width: 1230px) {
   .wrapper {
     width: 100%;
