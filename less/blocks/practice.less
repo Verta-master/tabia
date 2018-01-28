@@ -2,6 +2,7 @@
   padding-top: 70px;
   padding-bottom: 65px;
   width: 100%;
+  background-color: #000;
   background-image: url(../img/bg-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -12,6 +13,15 @@
     font-size: 25px;
     line-height: 36px;
     margin-bottom: 15px;
+  }
+  
+  &--company {
+    background-image: none;
+    background-color: #fafafa;
+    
+    h2 {
+      color: #000;
+    }
   }
 }
 
@@ -42,6 +52,41 @@
   
   p {
     margin-top: 0;
+  }
+  
+  a {
+    color: #80909c;
+    
+    &:hover,
+    &:active {
+      h3 {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  &--double {
+    height: auto;
+    display: block;
+    padding: 0;
+    background-color: rgba(255,255,255,0);
+  }
+}
+
+.practice__block {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 35px 30px 20px 30px;
+  margin-bottom: 30px;
+  background-color: rgb(255, 255, 255);
+  
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
