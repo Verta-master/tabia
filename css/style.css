@@ -445,6 +445,21 @@ html {
 figure {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+figure img {
+  display: block;
+  max-width: none;
+  height: 100%;
 }
 ul {
   margin: 0;
@@ -482,10 +497,10 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 2px solid rgba(0, 3, 7, 0.2);
+  border-bottom: 1px solid rgba(0, 3, 7, 0.2);
 }
 .title--bg {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .title__link {
   width: 22px;
@@ -717,6 +732,20 @@ h2 {
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
+}
+.promo p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.promo--internal {
+  padding-bottom: 35px;
+}
+.promo--internal h1 {
+  margin-bottom: 30px;
 }
 .promo__btn {
   width: 200px;
@@ -1352,6 +1381,207 @@ h2 {
   height: 40px;
   background-color: #629fd1;
 }
+.blog {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background-color: #f8f8f8;
+}
+.blog h2 {
+  font-size: 25px;
+  line-height: 36px;
+  color: #3c434c;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.blog__list {
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+.blog__item {
+  width: 370px;
+  margin-right: 35px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+}
+.blog__item:nth-child(3n) {
+  margin-right: 0;
+}
+.blog__item:hover h3,
+.blog__item:active h3 {
+  text-decoration: underline;
+}
+.blog__text {
+  padding: 25px 30px;
+  color: #80909c;
+}
+.blog__text h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #3c434d;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.blog__text p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.video {
+  padding-top: 90px;
+  padding-bottom: 45px;
+}
+.video h2 {
+  font-size: 25px;
+  line-height: 36px;
+  color: #000;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.video__slider {
+  margin-top: 48px;
+  padding-bottom: 40px;
+}
+.video__block {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+}
+.video__block img {
+  display: block;
+}
+.video__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.video__overlay p {
+  max-width: 220px;
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+.video__overlay:hover,
+.video__overlay:active {
+  opacity: 0.8;
+}
+.video__slide {
+  width: 370px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.video__slider > .swiper-pagination-bullets {
+  bottom: 20px;
+}
+.video__slider > .swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #dbe4eb;
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 1;
+}
+.video__slider > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 6px;
+}
+.video__slider > .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: #a2c527;
+  border-color: #a2c527;
+}
+.news {
+  padding-top: 90px;
+  padding-bottom: 60px;
+  background-color: #fbfbfb;
+}
+.news h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 25px;
+  line-height: 36px;
+  color: #000;
+  font-weight: 700;
+}
+.news__block {
+  display: block;
+  width: 370px;
+  margin-bottom: 30px;
+  padding: 25px 30px;
+  color: #80909c;
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+}
+.news__block h3 {
+  font-size: 15px;
+  color: #000;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.news__block p {
+  margin-bottom: 5px;
+}
+.news__block:hover h3,
+.news__block:active h3 {
+  text-decoration: underline;
+}
+.news__slider {
+  margin-top: 48px;
+  padding-bottom: 30px;
+}
+.news__slide {
+  width: 370px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.news__slider > .swiper-pagination-bullets {
+  bottom: 0;
+}
+.news__slider > .swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #dbe4eb;
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 1;
+}
+.news__slider > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 6px;
+}
+.news__slider > .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: #a2c527;
+  border-color: #a2c527;
+}
 @media (max-width: 1230px) {
   .wrapper {
     width: 100%;
@@ -1421,6 +1651,17 @@ h2 {
   .contacts__address--internal {
     width: 450px;
   }
+  .blog__item:nth-child(3n),
+  .blog__item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .news__slider,
+  .video__slider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 775px;
+  }
 }
 @media (max-width: 1022px) {
   .service__img {
@@ -1457,6 +1698,16 @@ h2 {
     position: static;
     -webkit-transform: none;
             transform: none;
+  }
+  .blog__item,
+  .news__block,
+  .news__slide,
+  .video__slide {
+    width: 270px;
+  }
+  .news__slider,
+  .video__slider {
+    width: 575px;
   }
 }
 @media (max-width: 700px) {
@@ -1518,5 +1769,9 @@ h2 {
   .order__block p {
     width: 100%;
     max-width: 100%;
+  }
+  .news__slider,
+  .video__slider {
+    width: 270px;
   }
 }
