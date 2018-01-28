@@ -1,0 +1,35 @@
+.breadcrumbs {
+  margin-top: 100px;
+}
+
+.breadcrumbs__link {
+  color: #629fd1;
+  margin-right: 10px;
+  position: relative;
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+  
+  &::after {
+    content: ">";
+    position: absolute;
+    top: -3px;
+    right: -10px;
+    color: #000;
+  }
+  
+  &:last-child {
+    color: #000;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+    
+    &::after {
+      display: none;
+    }
+  }
+}

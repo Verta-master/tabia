@@ -1,0 +1,82 @@
+.sidebar {
+  width: 370px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar__list {
+  padding: 25px;
+  padding-bottom: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar__item {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 6px;
+    height: 10px;
+    background-image: url(../img/icon-arrow-blue.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.sidebar__link {
+  color: #000;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.sidebar__subitem {
+  margin-top: 25px;
+  padding-left: 25px;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(201, 207, 212);
+  }
+}
+
+.sidebar__sublink {
+  color: #80909c;
+  
+  &:hover,
+  &:active,
+  &--active {
+    color: #629fd1;
+  }
+}
+
+.sidebar__btn {
+  position: absolute;
+  bottom: 25px;
+  left: 45px;
+  color: #80909c;
+  text-decoration: underline;
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
