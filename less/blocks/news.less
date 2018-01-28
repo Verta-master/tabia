@@ -1,0 +1,74 @@
+.news {
+  padding-top: 90px;
+  padding-bottom: 60px;
+  background-color: #fbfbfb;
+  
+  h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 25px;
+    line-height: 36px;
+    color: #000;
+    font-weight: 700;
+  }
+}
+
+.news__block {
+  display: block;
+  width: 370px;
+  margin-bottom: 30px;
+  padding: 25px 30px;
+  color: #80909c;
+  border: 1px solid rgb(219, 219, 219);
+  background-color: rgb(255, 255, 255);
+  
+  h3 {
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 5px;
+  }
+    
+  &:hover,
+  &:active {
+    h3 {
+      text-decoration: underline;
+    }
+  }
+}
+
+.news__slider {
+  margin-top: 48px;
+  padding-bottom: 30px;
+}
+
+.news__slide {
+  width: 370px;
+  box-sizing: border-box;
+}
+
+.news__slider > .swiper-pagination-bullets {
+  bottom: 0;
+}
+
+.news__slider > .swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgb(219, 228, 235);
+  background-color: rgba(255,255,255,0);
+  opacity: 1;
+}
+
+.news__slider > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 6px;
+}
+
+.news__slider > .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: rgb(162, 197, 39);
+  border-color: rgb(162, 197, 39);
+}
