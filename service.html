@@ -5,14 +5,13 @@
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Услуги компании</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header">
     <div class="header__wrap wrapper">
       <div class="logo">
-        <img src="img/logo.png" alt="Logo" width="90" height="36">
+        <img src="img/logo.svg" alt="Logo" width="90" height="36">
       </div>
       <nav class="menu menu--closed">
         <button type="button" class="menu__btn"><span class="visually-hidden">Меню</span></button>
@@ -48,6 +47,7 @@
           <ul class="sidebar__list">
             <li class="sidebar__item">
               <a href="#" class="sidebar__link">Юридическое сопровождение</a>
+              <button type="button" class="sidebar__open"></button>
               <ul class="sidebar__sublist">
                 <li class="sidebar__subitem">
                   <a href="#" class="sidebar__sublink">Договорная и претензионная работа</a>
@@ -68,6 +68,7 @@
             </li>
             <li class="sidebar__item">
               <a href="#" class="sidebar__link">Решение проблем в правоохранительных органах</a>
+              <button type="button" class="sidebar__open"></button>
               <ul class="sidebar__sublist">
                 <li class="sidebar__subitem">
                   <a href="#" class="sidebar__sublink">Представление интересов граждан и организаций в МВД, ФСБ, следственном комитете, прокуратуре, таможне</a>
@@ -85,6 +86,7 @@
             </li>
             <li class="sidebar__item">
               <a href="#" class="sidebar__link">Разрешение споров в сфере предпринимательской деятельности</a>
+              <button type="button" class="sidebar__open"></button>
               <ul class="sidebar__sublist">
                 <li class="sidebar__subitem">
                   <a href="#" class="sidebar__sublink">Пункт 1</a>
@@ -99,6 +101,7 @@
             </li>
             <li class="sidebar__item">
               <a href="#" class="sidebar__link">Споры физических лиц</a>
+              <button type="button" class="sidebar__open"></button>
               <ul class="sidebar__sublist">
                 <li class="sidebar__subitem">
                   <a href="#" class="sidebar__sublink">Пункт 1</a>
@@ -113,6 +116,7 @@
             </li>
             <li class="sidebar__item">
               <a href="#" class="sidebar__link">Взыскание долгов</a>
+              <button type="button" class="sidebar__open"></button>
               <ul class="sidebar__sublist">
                 <li class="sidebar__subitem">
                   <a href="#" class="sidebar__sublink">Пункт 1</a>
@@ -127,6 +131,7 @@
             </li>
             <li class="sidebar__item">
               <a href="#" class="sidebar__link">Семейные споры</a>
+              <button type="button" class="sidebar__open"></button>
               <ul class="sidebar__sublist">
                 <li class="sidebar__subitem">
                   <a href="#" class="sidebar__sublink">Пункт 1</a>
@@ -270,7 +275,7 @@
   
   <footer class="footer wrapper">
     <div class="logo">
-      <img src="img/logo.png" alt="Logo" width="90" height="36">
+      <img src="img/logo.svg" alt="Logo" width="90" height="36">
     </div>
     <nav class="menu menu--closed">
       <button type="button" class="menu__btn"><span class="visually-hidden">Меню</span></button>
@@ -293,8 +298,14 @@
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
   
-<!-- Sliders -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
-  
+<!-- Sidebar -->
+  <script>
+    $('.sidebar__open').click(function() {
+      $(this).next().slideToggle();
+    });
+    $('.sidebar__btn').click(function() {
+      $('.sidebar__sublist').slideUp();
+    });
+  </script>
 </body>
 </html>

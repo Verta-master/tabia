@@ -17,16 +17,25 @@
   padding-left: 20px;
   position: relative;
   margin-bottom: 20px;
+}
+
+.sidebar__open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  margin-left: -5px;
+  background-image: url(../img/icon-arrow-blue.svg);
+  background-repeat: no-repeat;
+  background-size: 6px 10px;
+  background-position: center;
+  transition: ease-out 0.2s;
   
-  &::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 0;
-    width: 6px;
-    height: 10px;
-    background-image: url(../img/icon-arrow-blue.svg);
-    background-repeat: no-repeat;
+  &:hover,
+  &:active {
+    transform: rotate(90deg);
+    transition: ease-out 0.2s;
   }
 }
 
@@ -40,6 +49,10 @@
   &:active {
     text-decoration: underline;
   }
+}
+
+.sidebar__sublist {
+  display: none;
 }
 
 .sidebar__subitem {
