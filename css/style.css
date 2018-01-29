@@ -567,6 +567,10 @@ h2 {
 .logo {
   padding-top: 4px;
 }
+.logo img {
+  width: 90px;
+  height: 36px;
+}
 .menu {
   position: relative;
   padding-left: 33px;
@@ -1860,15 +1864,26 @@ h2 {
   position: relative;
   margin-bottom: 20px;
 }
-.sidebar__item::before {
-  content: "";
+.sidebar__open {
   position: absolute;
-  top: 3px;
+  top: 0;
   left: 0;
-  width: 6px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
+  margin-left: -5px;
   background-image: url(../img/icon-arrow-blue.svg);
   background-repeat: no-repeat;
+  background-size: 6px 10px;
+  background-position: center;
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+.sidebar__open:hover,
+.sidebar__open:active {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
 }
 .sidebar__link {
   color: #000;
@@ -1879,6 +1894,9 @@ h2 {
 .sidebar__link:hover,
 .sidebar__link:active {
   text-decoration: underline;
+}
+.sidebar__sublist {
+  display: none;
 }
 .sidebar__subitem {
   margin-top: 20px;
